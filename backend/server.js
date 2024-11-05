@@ -9,7 +9,11 @@ app.use(cors({ origin: "http://localhost:3000" }));
 
 // placeholder home page
 app.get("/", (req, res) => {
-  return res.send("HELLO WORLD!")
+  return res.json({
+    title: "Welcome to Delizioso!",
+    subtitle: "Experience the Best of Italian Cuisine",
+    description: "We are committed to providing you with the freshest ingredients and the most delicious recipes. Explore our menu and place your order today!",
+  })
 })
 
 // Restaurant Website
@@ -24,13 +28,22 @@ app.post("/orderStatus", (req, res) => {
 app.post("/newOrder", (req, res) => {
   // this post request will accept form data with a list of food items and create an appropriate entry
   // in the database, creating an order ID and setting the status to "READY_FOR_DELIVERY"
+
+  //Hey this is Tyler, how would ordering work? I was thinking a box where you input the amount you want for an item
+  //beside the item like "Spaghetti [3]" and it will take 3 orders of Spaghetti
   return res.send("New order received!")
 })
 
 // get menu
 app.get("/menu", (req, res) => {
   // this will eventually respond with a JSON object with the names and prices of our menu items
-  return res.send("Spaghetti $5.99 etc!")
+  const menuItems = [
+    { name: "Spaghetti", price: "$5.99" },
+    { name: "Lasagna", price: "$7.99" },
+    { name: "Pizza", price: "$6.99" },
+    // Add more items as needed
+  ];
+  return res.json(menuItems);
 })
 
 // Order Processing Website
