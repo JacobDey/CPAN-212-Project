@@ -39,6 +39,10 @@ const Menu = () => {
 const styles = {
   container: {
     padding: "20px",
+    fontSize: "1.5rem",
+    border: "6px groove black",
+    borderRadius: 25,
+
   },
   title: {
     fontSize: "2rem",

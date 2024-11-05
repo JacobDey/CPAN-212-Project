@@ -32,19 +32,23 @@ const homeStyles = {
   container: {
     textAlign: "center",
     marginBottom: "20px",
+    border: "7px double black",
+    borderRadius: 25,
+    padding: "7px",
+    backgroundColor: "lightblue"
   },
   title: {
-    fontSize: "2.5rem",
+    fontSize: "4.5rem",
     fontWeight: "bold",
     marginBottom: "10px",
   },
   subtitle: {
-    fontSize: "1.5rem",
+    fontSize: "2rem",
     marginBottom: "10px",
   },
   description: {
-    fontSize: "1.2rem",
-    color: "#555",
+    fontSize: "1.5rem",
+    color: "black",
   },
 };
 

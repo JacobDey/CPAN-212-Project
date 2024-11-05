@@ -42,6 +42,7 @@ const styles = {
     minHeight: "100vh",
     backgroundColor: "#f8f8ff",
     textAlign: "center",
+    border: "7px double black"
   },
   title: {
     fontSize: "2.5rem",
@@ -58,7 +59,7 @@ const styles = {
   link: {
     color: "#007BFF",
     textDecoration: "none",
-    fontSize: "1.2rem",
-    margin: "5px 0",
+    fontSize: "1.7rem",
+    margin: "6px 0",
   },
 };
